@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration Page</title>
+    <link rel="stylesheet" href="formStyle.css">
+</head>
+<body>
+    
+    <div id="topBar">
+
+        <div class="logo">
+            Sunbic <small>Online University</small>
+        </div>
+
+    </div>
+
+    <div id="navBar">
+
+        <hr>
+
+        <div id="navContent">
+
+            <ul>
+
+                <li><a href="../homePage/homePage.html" id="navLink">Home</a></li>
+                <li><a href="../coursePage/coursePage.html">Course</a></li>
+                <li><a href="../formPage/formPage.html">Register</a></li>
+
+            </ul>
+
+        </div>
+
+        <hr>
+
+    </div>
+
+    <div id="mainContent">
+
+        <h1 id="title">Start your online university by registering an account</h1>
+
+        <form action="" onsubmit="return validRegis()">
+
+            <div id="registForm">
+
+                <div class="form">
+    
+                    <label for="formLabel">Full Name</label>
+                    <input type="text" placeholder="Enter Your Full Name" name="name" class="formEntry" id="name">
+                    <div class="errorMsg" id="error5"></div>
+    
+                </div>
+
+                <div class="form">
+    
+                    <label for="formLabel">Email</label>
+                    <input type="text" placeholder="Enter Email" name="email" class="formEntry" id="email">
+                    <div class="errorMsg" id="error1"></div>
+    
+                </div>
+    
+                <div class="form">
+    
+                    <label for="formLabel">Birth Date</label>
+                    <input type="date" placeholder="Enter Birth Date" name="birthDate" class="formEntry" id="birthDateForm" max="2005-12-31">
+                    <div class="errorMsg" id="error2"></div>
+    
+                </div>
+    
+                <div class="form">
+    
+                    <label for="formLabel">Password</label>
+                    <input type="password" placeholder="Enter Password" name="psw" class="formEntry" id="psw">
+                    <div class="errorMsg" id="error3"></div>
+    
+                </div>
+    
+                <div class="form">
+    
+                    <label for="formLabel">Confirm Password</label>
+                    <input type="password" placeholder="Confirm Password" name="pswConfirm" class="formEntry" id="pswConfirm">
+                    <div class="errorMsg" id="error4"></div>
+    
+                </div>
+    
+            </div>
+            
+            <p>By creating an account you agree to our&nbsp;<a href="" id="tncLink">Terms & Privacy</a></p>
+            
+            <!-- <p id="error"></p> -->
+
+            <button type="submit" id="registBtn">Register</button>
+
+            <!-- <input type="submit"> -->
+
+        </form>
+        
+
+    </div>
+
+    <div id="footer">
+
+        <div class="logo">
+            
+            <p>Sunbic</p>
+            <p id="subText">Higher Education</p>
+
+        </div>
+
+        <a href="../feedbackPage/feedbackPage.html" id="feedbackLink"><div id="sendFeedback">Send Feedback</div></a>
+
+        <div id="socialMedia">
+            <a href="https://web.whatsapp.com"><img src="../resource/Whatsapp.png" alt=""></a>
+            <a href="https://www.facebook.com"><img src="../resource/Facebook.png" alt=""></a>
+        </div>
+
+    </div>
+
+    <div id="copy">Copyright 2022: Justin Thejasukmana</div>
+
+</body>
+<script src="formScript.js"></script>
+</html>

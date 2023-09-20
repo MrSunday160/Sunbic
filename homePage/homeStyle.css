@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&family=Ubuntu:ital,wght@0,400;1,500&display=swap');
+
+*{
+
+    box-sizing: border-box;
+    margin: 0;
+
+}
+
+body{
+
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    background-color: #EEEEEE;
+    width: auto;
+    height: auto;
+    text-decoration: none;
+
+}
+
+hr{
+
+    height: 0px;
+    width: 100%;
+
+    border: 1px solid #A4A4A4;
+
+}
+
+/* top bar */
+
+#topBar{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 32px 57px;
+    gap: 10px;
+
+}
+
+/* logo class */
+
+.logo{
+
+    font-family: 'Ubuntu', sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 30px;
+    align-items: center;
+    text-align: center;
+
+    background-color: #3FBDF4;
+    padding: 24px;
+    border-radius: 48px;
+
+    color: #000000;
+
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+}
+
+.logo small{
+
+    font-size: 18px;
+    font-weight: lighter;
+    font-style: normal;
+    line-height: 30px;
+    text-align: center;
+
+}
+
+/* nav bar */
+
+#navBar{
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+
+    background-color: #EEEEEE;
+
+    top: 0;
+    position: -webkit-sticky;
+    position: sticky;
+}
+
+#navBar hr{
+
+    border: 1px solid rgba(0, 0, 0, 0.24);
+    width: 100%;
+
+}
+
+#navContent{
+
+    list-style: none;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 11px 87px;
+
+}
+
+#navContent ul{
+
+    list-style: none;
+    display: inline-flex;
+    gap: 50px;
+
+}
+
+#navContent li a{
+
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 22px;
+
+    color: #292929;
+
+}
+
+/* main content */
+
+#mainContent{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 78px 0px 59px;
+    gap: 62px;
+
+}
+
+/* news */
+
+#latestNews{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+    height: 517px;
+
+    /* background: url(../resource/kindpng_88820.png), #292929; */
+    background-size: auto;
+
+}
+
+#latestContent{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 185px;
+    gap: 46px;
+
+    height: 453px;
+
+}
+
+#latestDesc{
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 28px;
+
+    width: 325px;
+    height: 276px;
+
+}
+
+#latestNewsTitle{
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    display: flex;
+    align-items: center;
+    color: #292929;
+
+}
+
+#newsDesc{
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #292929;
+
+}
+
+#latestContent img{
+
+    transition: 300ms;
+
+}
+
+#latestContent img:hover{
+
+    transform: scale(1.05);
+
+}
+
+#latestDesc a{
+
+    text-decoration: none;
+    font-weight: 700;
+    color: #2273BD;
+
+    transition: 200ms;
+
+}
+
+#latestDesc a:hover{
+
+    transform: scale(1.08);
+
+}
+
+/* about */
+
+#aboutUs{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 50px;
+    gap: 25px;
+
+    /* background: url(../resource/PngItem_672535.png); */
+    background-size: auto;
+
+}
+
+#aboutContent{
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 31px 59px 31px 45px;
+    gap: 16px;
+
+    width: 661px;
+    height: auto;
+
+}
+
+#aboutTitle{
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    color: #292929;
+
+}
+
+#aboutUs hr{
+
+    width: 557px;
+    height: 0px;
+
+    border: 1px solid #A4A4A4;
+
+}
+
+#aboutDesc{
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+
+    color: #292929;
+
+}
+
+#aboutUs img{
+
+    width: 603px;
+    height: 408px;
+
+    transition: 300ms;
+
+}
+
+#aboutUs img:hover{
+
+    transform: scale(1.05);
+
+}
+
+/* parallax */
+
+#parallax{
+
+    background-image: url("../resource/1280px-Pure-mathematics-formulæ-blackboard.jpg");
+
+    width: 100%;
+    height: 350px;
+
+    /* width: 100%;
+    padding: 150px; */
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+/* vision mission */
+
+#visionMission{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 55px 300px;
+    gap: 150px;
+
+    height: auto;
+    width: 100%;
+
+    background-color: #0F4C75;
+
+}
+
+#visionMission p{
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 42px;
+    text-align: center;
+    color: #FF774A;
+
+    width: 700px;
+
+}
+
+#visionMission small{
+
+    font-size: 32px;
+    font-weight: lighter;
+    /* line-height: 37.16px; */
+    font-weight: weight;
+    color: white;
+
+}
+
+#visionMission img{
+
+    width: auto;
+    height: auto;
+    position: relative;
+    clip: rect(0px, 0px, 10px, 0px);
+
+}
+
+/* footer */
+
+#footer{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 120px;
+    gap: 280px;
+
+    height: 182px;
+
+    background: #3B3B3B;
+
+}
+
+#footer .logo{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 7px;
+
+    height: 79px;
+    width: 250px;   
+
+}
+
+#subText{
+
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 14px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+
+#feedbackLink{
+
+    text-decoration: none;
+    color: white;
+}
+
+#sendFeedback{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+
+    width: 280px;
+    height: 65px;
+
+    background: #3FBDF4;
+    border-radius: 62px;
+
+    text-decoration: none;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 30px;
+    color:  black;
+
+    transition: 300ms;
+
+}
+
+#sendFeedback:hover{
+
+    transform: scale(1.1);
+    background: #44dede;
+
+}
+
+#socialMedia{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 28px;
+    ;
+    gap: 25px;
+
+    width: 141px;
+    height: 67px;
+
+    background: #FFFFFF;
+    border-radius: 62px;
+
+}
+
+#socialMedia img{
+
+    width: 24px;
+    height: 24px;
+
+}
+
+#socialMedia a{
+
+    height: 24px;
+
+}
+
+#copy{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+
+    height: 45px;
+
+    background: #3B3B3B;
+    
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
+    
+    color: white;
+
+}
